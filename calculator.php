@@ -1,31 +1,31 @@
  <?php
  
  // Refactoring
- public class Calclulator 
- [
+ public class Calculator 
+ {
  
 	public function plus ($a, $b){
-		$result = $a + $b;
 		return $a + $b
 	}
 	
 	
 	
 	
-	public function Minus($Zahl1, $zahl2, $Zahl3)
+	public function Minus($Zahl1, $zahl2)
 	{
-		return $Zahl1-$zahl2; // Calculates $zahl1-$tahl2
+		return $Zahl1-$zahl2; // Calculates $Zahl1-$zahl2
 	}
+
 	public static function SubTract ($a, $b){
-		return $a - $b;
+		return Minus($a, $b);
 	}
 	
 	
 	
 	public function squareRoot($a)
 	{
-		return $a*$a;
-		}
+		return sqrt($a);
+	}
 
 	
 	/**
@@ -41,9 +41,9 @@
 	}
 	
 	
-	/** Divdes two values */
-	private function multiply_values($number, $nummer){
-		$result=$number*$nummer;
+	/** multiplies two values */
+	private function multiply_values($number1, $number2){
+		$result=$number1*$number2;
 		return $result;
 	}
 	
